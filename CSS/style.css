@@ -1,0 +1,105 @@
+@charset 'uff8';
+
+/* reset css */
+
+html{font-size:0.625em;}
+body,h1,ul,h2,p{margin:0; padding:0;}
+li{list-style:none;}
+img{vertical-align: top;}
+
+
+
+/* style css */
+
+/* 전체영역 */
+.wrap{
+    width:700px; 
+    margin:0 auto; 
+    border:1px solid red;
+    overflow:hidden;
+}
+
+.header{
+  background-color:#2b2b2b;
+}
+
+.banner{
+    background:url(../img/flife-bg-visual.jpg);
+    height: 425px;
+}
+
+/* wrap 영역 */
+.wrap h1{
+    float:left;
+}
+
+/* 헤더영역 */
+
+.header ul{
+    overflow:hidden;
+}
+
+.header li{
+    float:right;
+}
+
+.header li:after{
+   content:'|';
+   color:#fff;
+   display: inline-block;
+   vertical-align: middle;
+}
+
+.header li:first-child:after{
+   display:none;
+}
+
+.header li a{
+    display: inline-block;
+    padding:1.2em 1em;
+}
+
+.header li a img{
+    width: 20px;
+    height: 20px;
+}
+
+/* 배너영역 */
+
+.banner{text-transform: uppercase;}
+
+.banner h2{
+    padding-top:2.160em;
+    padding-left:1em;
+    font-size:5rem;
+    color:#fff;
+}
+
+.banner p{
+    font-family: 'Arial Bold';
+    font-size:5rem;
+    color:#fff;
+    padding-left: 2em;
+    font-weight: bold;
+    line-height: 0.92;  
+}
+
+.banner p.txt{
+    font-family:'Arial Regular';
+    font-size:2rem;
+    padding-left:4.150em;
+    padding-top: 1.300em;
+    padding-bottom: 1.700em;
+}
+
+.banner address{
+    width: 310px;
+    border-radius: 2.50em;
+    background-color:#32a3dc;
+    font-size:2rem;
+    color:#fff;
+    text-align: center;
+    padding:0.5em 0.750em;
+    margin-left: 3.000em;
+}
+
