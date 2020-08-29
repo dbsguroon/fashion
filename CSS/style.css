@@ -2,104 +2,290 @@
 
 /* reset css */
 
-html{font-size:0.625em;}
-body,h1,ul,h2,p{margin:0; padding:0;}
-li{list-style:none;}
-img{vertical-align: top;}
+html {
+    font-size: 0.625em;
+}
+
+body{
+    background-color:beige;
+}
+
+body,
+h1,
+ul,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
 
 
 
 /* style css */
 
 /* 전체영역 */
-.wrap{
-    width:700px; 
-    margin:0 auto; 
-    border:1px solid red;
-    overflow:hidden;
+.wrap {
+    width: 700px;
+    margin: 0 auto;
+/*    border: 1px solid red;*/
+    overflow: hidden;
 }
 
-.header{
-  background-color:#2b2b2b;
+.header {
+    background-color: #2b2b2b;
 }
 
-.banner{
-    background:url(../img/flife-bg-visual.jpg);
+.banner {
+    background: url(../img/flife-bg-visual.jpg);
     height: 425px;
 }
 
+.news {
+    overflow: hidden;
+    background-color:#fff;
+}
+
+.zara {}
+
 /* wrap 영역 */
-.wrap h1{
-    float:left;
+.wrap h1 {
+    float: left;
 }
 
 /* 헤더영역 */
 
-.header ul{
-    overflow:hidden;
+.header ul {
+    overflow: hidden;
 }
 
-.header li{
-    float:right;
+.header li {
+    float: right;
 }
 
-.header li:after{
-   content:'|';
-   color:#fff;
-   display: inline-block;
-   vertical-align: middle;
-}
-
-.header li:first-child:after{
-   display:none;
-}
-
-.header li a{
+.header li:after {
+    content: '|';
+    color: #fff;
     display: inline-block;
-    padding:1.2em 1em;
+    vertical-align: middle;
 }
 
-.header li a img{
+.header li:first-child:after {
+    display: none;
+}
+
+.header li a {
+    display: inline-block;
+    padding: 1.2em 1em;
+}
+
+.header li a img {
     width: 20px;
     height: 20px;
 }
 
 /* 배너영역 */
 
-.banner{text-transform: uppercase;}
-
-.banner h2{
-    padding-top:2.160em;
-    padding-left:1em;
-    font-size:5rem;
-    color:#fff;
+.banner {
+    text-transform: uppercase;
 }
 
-.banner p{
+.banner h2 {
+    padding-top: 2.160em;
+    padding-left: 1em;
+    font-size: 5rem;
+    color: #fff;
+}
+
+.banner p {
     font-family: 'Arial Bold';
-    font-size:5rem;
-    color:#fff;
+    font-size: 5rem;
+    color: #fff;
     padding-left: 2em;
     font-weight: bold;
-    line-height: 0.92;  
+    line-height: 0.92;
 }
 
-.banner p.txt{
-    font-family:'Arial Regular';
-    font-size:2rem;
-    padding-left:4.150em;
+.banner p.txt {
+    font-family: 'Arial Regular';
+    font-size: 2rem;
+    padding-left: 4.150em;
     padding-top: 1.300em;
     padding-bottom: 1.700em;
 }
 
-.banner address{
+.banner address {
     width: 310px;
     border-radius: 2.50em;
-    background-color:#32a3dc;
-    font-size:2rem;
-    color:#fff;
+    background-color: #32a3dc;
+    font-size: 2rem;
+    color: #fff;
     text-align: center;
-    padding:0.5em 0.750em;
+    padding: 0.5em 0.750em;
     margin-left: 3.000em;
 }
 
+/* news */
+
+.news h2 {
+    font-size: 3rem;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 1.733em;
+    margin-bottom: 1.767em;
+    font-family: 'Arial Regular';
+    color: #204456;
+}
+
+.news div {
+    width: 33.333%;
+    float: left;
+    text-align: center;
+}
+
+.news div h3 {
+    font-size: 1.8rem;
+    padding: 0.778em 0;
+    color: #204456;
+}
+
+.news div p {
+    font-size: 1.4rem;
+    line-height: 1.2;
+    font-family: 'Arial Regular';
+    color: #204456;
+    padding-bottom: 4.643em;
+}
+
+/* zara */
+
+.zara .sw {
+    background: url(../img/flife-bg-zara1.jpg);
+    text-transform: uppercase;
+    color: #fff;
+    height: 239px;
+    position: relative;
+}
+
+.zara .sw h2 {
+    position: absolute;
+    font-size: 6rem;
+    left: 8%;
+    top: 25%;
+    font-weight: 600;
+}
+
+.zara .sw p {
+    font-family: 'Arial Bold';
+    font-size: 6rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1;
+    border: 3px solid #2c2c2c;
+    border-radius: 50%;
+    padding: 0.417em 0.267em;
+    color: #2c2c2c;
+    position: absolute;
+    right: 7%;
+    top: 15%;
+
+}
+
+.zara .sw p span {
+    display: block;
+    font-size: 3.6rem;
+}
+
+.zara .sm {
+    background: url(../img/flife-bg-zara2.jpg);
+    height: 239px;
+    position: relative;
+}
+
+.zara .sm h2 {
+    color: #fff;
+    font-size: 6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: absolute;
+    right: 8%;
+    top: 25%;
+}
+
+.zara .sm p {
+    color: #fff;
+    font-size: 6rem;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    left: 7%;
+    top: 15%;
+    line-height: 1;
+    padding: 0.417em 0.267em;
+    border: 3px solid #fff;
+    border-radius: 50%;
+}
+
+.zara .sm p span {
+    display: block;
+    font-size: 3.6rem;
+}
+
+.zara .zp {
+    overflow: hidden;
+}
+
+.zara .zp div {
+    float:left;
+    width:calc(100% / 3);
+    height: 249px;
+    text-align: center;
+    position: relative;
+}
+
+.zara .zp div span{
+    background-color:#32a3dc;
+    font-size:2rem;
+    text-transform: capitalize;
+    color:#fff;
+    display:block;
+    width: 100px;
+    height: 100px;
+    line-height:5;
+    border-radius: 50%;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+
+.zara .zp .zw {
+    background: url(../img/flife-bg-women.jpg); 
+    position: relative;
+}
+
+.zara .zp .zw:after{
+    content:'';
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    top:0;
+    background-color:rgba(244, 185, 143, 0.3);
+}
+
+.zara .zp .zm {
+    background: url(../img/flife-bg-men.jpg);
+}
+
+.zara .zp .zk {
+    background: url(../img/flife-bg-kids.jpg);
+}
