@@ -56,6 +56,12 @@ img {
 
 .zara {}
 
+.puma{
+    background: url(../img/flife-bg-puma.jpg);
+    height: 787px;
+    position: relative;
+}
+
 /* wrap 영역 */
 .wrap h1 {
     float: left;
@@ -289,3 +295,60 @@ img {
 .zara .zp .zk {
     background: url(../img/flife-bg-kids.jpg);
 }
+
+
+/* puma */
+
+.puma>div{
+    position: absolute;
+    right:3%;
+    top:10%;
+}
+
+.puma>div.product2{
+    top:40%;
+}
+
+.puma>div.product3{
+    top:70%;
+}
+
+.puma>div img{
+    display:inline-block;
+    width: 249px;
+    height: 195.2px;
+    margin:0 -0.4em;
+}
+
+.puma>div .desc{
+    display:inline-block;
+    color:#fff;
+    text-align: center;
+    background-color:rgb(33,68,87);
+    padding:2.6em 2.6em 1em 2.6em;
+}
+
+.puma>div .desc h2{
+    font-size:2.1rem;
+    
+}
+
+.puma>div .desc h2 span{
+    font-family: 'Arial Regular';
+    display:block;
+    line-height: 1.09;
+    margin-bottom:1.762em;
+}
+
+.puma>div .desc p{
+    font-family: 'Arial Bold';
+    font-size:5.2rem;
+    line-height:0.7em;
+}
+
+.puma>div .desc p span{
+    font-family: 'Arial Regular';
+    display: block;
+    font-size:1.9rem;
+}
+
